@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Courgette', cursive;
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Inter Tight', sans-serif;
+    font-family: 'Noto Serif', serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.valute{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.valute p + p{
+    color: gray;
+    width: 30%;
+    color: red;
+}
+.valute img + p{
+    width: 20%;
+    font-size: 1.7em;
+}
+.list{
+    height: 85%;
+    overflow: scroll;
+    padding-left: 10px;
+}
+.pageList > h1{
+    height: 10%;
+    text-align: center;
+    padding: 10px;
+}
+.pageList, .pageCalc{
+    height: 90vh;
+}
+.tabBar{
+    height: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.tabBar button{
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(255, 192, 74);
+}
+.pageCalc{
+    width: 390px;
+    border: solid 2px #555;
+    border-radius: 10px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 80px;
+    gap: 20px;
+}
+.hide{
+    display: none;
+}
+.valute img{
+    width: 40px;
+}
+
+.valute p + p + p {
+    color: green;
+    padding-left: 10px;
+}
+
+.calc__result {
+    grid-column: 1 / -1;
+    border-radius: 10px;
+    border: solid 2px #555;
+    font-size: 56px;
+    padding: 10px;
+}
+
+.calc__btn {
+    border: none;
+    border-radius: 5px;
+    background-color: #eee;
+    cursor: pointer;
+    font-size: 30px;
+    box-shadow: 2px 3px 2px rgb(0, 0, 0, 0.5);
+}
+
+.calc__btn:hover {
+    opacity: 0.9;
+}
+
+.calc__btn:active {
+    box-shadow: 1px 1px 2px rgb(0, 0, 0, 0.5);
+}
+
+.calc__btn_operator {
+    background-color: #ffe2ae;
+    color: #fff;    
+}
+
+.calc__btn_reset {
+    background-color: #ff5050;
+    color: #fff;
+}
+
+.calc__btn_equal {
+    background-color: #5d50ff;
+    color: #fff;
+    grid-column: 2 / -1;
+}
+
